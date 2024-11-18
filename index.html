@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>QuizApp</title>
+  </head>
+  <body>
+    <div class="number-question">
+      <div class="number-question-box">
+        <h1 style="background-color: #496ddb; text-decoration: underline">
+          Number of questions
+        </h1>
+        <input class="number-question-input" type="text" placeholder="Ex:10" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="start-box">
+        <button class="start-btn">START</button>
+      </div>
+      <main class="app">
+        <div class="title">Quiz App</div>
+        <div class="reset-btn-box">
+          <button class="reset-btn visibility">RESET</button>
+        </div>
+        <div class="question-box"></div>
+        <div class="answers-box"></div>
+        <div class="status-box">
+          <div class="status">
+            <div class="wrong-answer" style="color: greenyellow">Wrong: 0</div>
+            <div class="correct-answer" style="color: rgb(239, 255, 8)">
+              Correct: 0
+            </div>
+          </div>
+          <div class="next-box">
+            <button class="next-btn visibility">Next question</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="stats"></div>
+    <script src="./index.js"></script>
+    <script src="./fetchQuiz.js"></script>
+  </body>
+</html>
